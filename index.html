@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>TheFloridaMan's Mods & More</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #000, #1a1a1a);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #ff4a00; /* UF Orange */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header a:hover {
+            color: #e63e00;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #ff4a00; /* UF Orange */
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #ccc;
+        }
+
+        .hero button {
+            background: #ff4a00; /* UF Orange */
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background: #e63e00;
+        }
+
+        .about {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff4a00; /* UF Orange */
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #aaa;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff4a00; /* UF Orange */
+        }
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .carousel .preview {
+            position: relative;
+            width: 150px;
+        }
+
+        .carousel .preview img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .carousel .preview img:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .carousel .preview button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #ff4a00; /* UF Orange */
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .carousel .preview button:hover {
+            color: #e63e00;
+        }
+
+        .carousel .preview button.prev {
+            left: -20px;
+        }
+
+        .carousel .preview button.next {
+            right: -20px;
+        }
+
+        .carousel .main {
+            max-width: 600px;
+        }
+
+        .carousel .main img {
+            width: 100%;
+            height: auto;
+            border: 3px solid #ff4a00; /* UF Orange */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(255, 74, 0, 0.5);
+        }
+        .social {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .social h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff4a00; /* UF Orange */
+        }
+
+        .social a {
+            margin: 0 15px;
+            font-size: 2rem;
+            color: #ff4a00; /* UF Orange */
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .social a:hover {
+            transform: scale(1.2);
+            color: #e63e00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <span>TheFloridaManCustoms Website</span>
+        </div>
+        <nav>
+            <a href="fcs.html">FCS Mod</a>
+            <a href="prevwork.html">Previous Work</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Page</h1>
+        <p>I have built this page to showcase my talents and works in the modding community and elsewhere.</p>
+        <img src="images/pell.png" alt="Pell Image" style="max-width: 150px; margin-top: 20px;">
+    </section>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a self-taught graphic designer among other things. I have worked with many modding groups to help make mods like College Hoops 2k8 Reborn, MVP 07 Reborn, and NCAA NEXT. Now I work on my own making my projects come to life. I am currently working on finishing my FCS MOD for NCAA 14.</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Featured Work</h2>
+        <div class="carousel">
+            <!-- Left preview image -->
+            <div class="preview">
+                <img id="left-preview" src="fcsgallery/6.jpg" alt="Preview Image">
+                <button class="prev" onclick="prevImage()">&#9664;</button>
+            </div>
+    
+            <!-- Main image -->
+            <div class="main">
+                <img id="carousel-image" src="fcsgallery/1.jpg" alt="Main Image">
+            </div>
+    
+            <!-- Right preview image -->
+            <div class="preview">
+                <img id="right-preview" src="fcsgallery/2.jpg" alt="Preview Image">
+                <button class="next" onclick="nextImage()">&#9654;</button>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Array of image sources
+        const images = [
+            "fcsgallery/1.jpg",
+            "fcsgallery/2.jpg",
+            "fcsgallery/3.jpg",
+            "fcsgallery/4.jpg",
+            "fcsgallery/5.jpg",
+            "fcsgallery/6.jpg",
+        ];
+        let currentIndex = 0;
+    
+        function updateCarousel() {
+            const prevIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            const nextIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+    
+            document.getElementById("carousel-image").src = images[currentIndex];
+            document.getElementById("left-preview").src = images[prevIndex];
+            document.getElementById("right-preview").src = images[nextIndex];
+        }
+    
+        // Show the previous image
+        function prevImage() {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            updateCarousel();
+        }
+    
+        // Show the next image
+        function nextImage() {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
+        }
+    </script>
+
+    <section class="social">
+        <h2>Connect with Me</h2>
+        <a href="https://x.com/TFMCustoms" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@thefloridaman7" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://discord.gg/tmru6d2f8S" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://www.patreon.com/c/TheFloridaManCustoms" target="_blank"><i class="fab fa-patreon"></i></a>
+    </section>
+
+    <footer>
+        Website made by TFM
+    </footer>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Previous Work=</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #000, #1a1a1a);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #ff4a00; /* UF Orange */
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header a:hover {
+            color: #e63e00;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .content {
+            padding: 50px;
+        }
+
+        .rung {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            gap: 20px;
+        }
+
+        .rung:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .carousel {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #121212;
+            border: 3px solid #ff4a00;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 20px rgba(255, 74, 0, 0.5);
+            position: relative;
+        }
+
+        .carousel img {
+            width: 100%;
+            max-width: 500px; /* Increased size */
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #ff4a00;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .carousel button:hover {
+            color: #e63e00;
+        }
+
+        .carousel button.prev {
+            left: 10px;
+        }
+
+        .carousel button.next {
+            right: 10px;
+        }
+
+        .info {
+            flex: 2;
+            text-align: left;
+        }
+
+        .info h3 {
+            font-size: 1.8rem;
+            color: #ff4a00;
+            margin-bottom: 15px;
+        }
+
+        .info p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <span>TheFloridaManCustoms Website</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="fcs.html">FCS Mod</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <div class="content">
+        <h1>Previous Work</h1>
+        <p>Here are some of the projects I have worked on over the years:</p>
+
+
+        <!-- Rung 5 -->
+        <div class="rung">
+            <div class="carousel" id="carousel-5">
+                <button class="prev" onclick="prevImage(5)">&#9664;</button>
+                <img src="cfbrgallery/1.jpg" onclick="openModal(5)">
+                <button class="next" onclick="nextImage(5)">&#9654;</button>
+            </div>
+            <div class="info">
+                <h3>College Football Revamped and other NCAA Football series work</h3>
+                <p>I had a short stint with CFBR working on the FCS teamswappers. I also did a lot of work on 13 Reborn and a lot of my attention has been focused on my FCS mod. I also made teams for creators like Bordeaux and TanMan.</p>
+            </div>
+        </div>
+
+
+        <!-- Rung 1 -->
+        <div class="rung">
+            <div class="carousel" id="carousel-1">
+                <button class="prev" onclick="prevImage(1)">&#9664;</button>
+                <img src="nextgallery/1.jpg" onclick="openModal(1)">
+                <button class="next" onclick="nextImage(1)">&#9654;</button>
+            </div>
+            <div class="info">
+                <h3>NCAA NEXT Work</h3>
+                <p>I did a lot of work on NEXT a while back, including Coastal Carolina and Furman in the official mod. I also worked on textures for FCS schools unofficially.</p>
+            </div>
+        </div>
+
+        <!-- Rung 2 -->
+        <div class="rung">
+            <div class="carousel" id="carousel-2">
+                <button class="prev" onclick="prevImage(2)">&#9664;</button>
+                <img src="reborngallery/1.jpg" onclick="openModal(2)">
+                <button class="next" onclick="nextImage(2)">&#9654;</button>
+            </div>
+            <div class="info">
+                <h3>Reborn Sports Network Presentation</h3>
+                <p>When I worked with RSPN, I did a lot of the presentation and logo assets for each mod. Here are some of the logos I made for the group during my time there.</p>
+            </div>
+        </div>
+
+        <!-- Rung 3 -->
+        <div class="rung">
+            <div class="carousel" id="carousel-3">
+                <button class="prev" onclick="prevImage(3)">&#9664;</button>
+                <img src="2k8gallery/1.jpg" onclick="openModal(3)">
+                <button class="next" onclick="nextImage(3)">&#9654;</button>
+            </div>
+            <div class="info">
+                <h3>College Hoops 2k8</h3>
+                <p>I did a lot of the texture work in the early days, especially in the SEC, Big 10, Big 12, and ACC. I also led the project at one point, coordinating courts and textures. In these images, Im showcasing my work on various teams via jersey previews. I also did the 2knav design.</p>
+            </div>
+        </div>
+
+        <!-- Rung 4 -->
+        <div class="rung">
+            <div class="carousel" id="carousel-4">
+                <button class="prev" onclick="prevImage(4)">&#9664;</button>
+                <img src="mvpgallery/1.jpg" onclick="openModal(4)">
+                <button class="next" onclick="nextImage(4)">&#9654;</button>
+            </div>
+            <div class="info">
+                <h3>MVP Baseball 2007</h3>
+                <p>I didn't do a lot of the heavy lifting with this mod, but I led the project at one point, as well as creating the templates for the mod, which led to hyper-realistic textures. I didnt make the textures but they were made using my template.</p>
+            </div>
+        </div>
+
+
+
+        <!-- Modals -->
+        <div class="modal" id="modal-1" onclick="closeModal(1)">
+            <img src="nextgallery/1.jpg">
+        </div>
+        <div class="modal" id="modal-2" onclick="closeModal(2)">
+            <img src="reborngallery/1.jpg">
+        </div>
+        <div class="modal" id="modal-3" onclick="closeModal(3)">
+            <img src="2k8gallery/1.jpg">
+        </div>
+        <div class="modal" id="modal-4" onclick="closeModal(4)">
+            <img src="mvpgallery/1.jpg">
+        </div>
+        <div class="modal" id="modal-5" onclick="closeModal(5)">
+            <img src="cfbrgallery/1.jpg">
+        </div>
+
+    </div>
+
+    <footer>
+        Website made by TFM.
+    </footer>
+
+    <script>
+        const carousels = {
+            1: ["nextgallery/1.jpg", "nextgallery/2.jpg", "nextgallery/3.jpg"],
+            2: ["reborngallery/1.jpg", "reborngallery/2.jpg", "reborngallery/3.jpg", "reborngallery/4.jpg", "reborngallery/5.jpg"],
+            3: ["2k8gallery/1.jpg", "2k8gallery/2.jpg", "2k8gallery/3.jpg"],
+            4: ["mvpgallery/1.jpg", "mvpgallery/2.jpg", "mvpgallery/3.jpg"],
+            5: ["cfbrgallery/1.jpg", "cfbrgallery/2.jpg", "cfbrgallery/3.jpg","cfbrgallery/4.jpg", "cfbrgallery/5.jpg", "cfbrgallery/6.jpg","cfbrgallery/7.jpg", "cfbrgallery/8.jpg", "cfbrgallery/9.jpg"]
+        };
+
+        const currentIndices = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0,};
+
+        function updateCarousel(carouselId) {
+            const images = carousels[carouselId];
+            const index = currentIndices[carouselId];
+            const carousel = document.querySelector(`#carousel-${carouselId} img`);
+            carousel.src = images[index];
+            const modal = document.querySelector(`#modal-${carouselId} img`);
+            if (modal) modal.src = images[index];
+        }
+
+        function prevImage(carouselId) {
+            currentIndices[carouselId] = (currentIndices[carouselId] === 0)
+                ? carousels[carouselId].length - 1
+                : currentIndices[carouselId] - 1;
+            updateCarousel(carouselId);
+        }
+
+        function nextImage(carouselId) {
+            currentIndices[carouselId] = (currentIndices[carouselId] === carousels[carouselId].length - 1)
+                ? 0
+                : currentIndices[carouselId] + 1;
+            updateCarousel(carouselId);
+        }
+
+        function openModal(modalId) {
+            const modal = document.getElementById(`modal-${modalId}`);
+            modal.classList.add('active');
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(`modal-${modalId}`);
+            modal.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
